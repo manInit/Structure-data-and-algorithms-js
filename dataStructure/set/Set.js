@@ -27,6 +27,10 @@ class MySet {
     this._collection.splice(indexElem, 1);
     return true;
   }
+  //check if the set is a subset of a different set
+  isSubset(otherSet) {
+    return this.values().every(value => otherSet.has(value));
+  }
 
   union(otherSet) {
     const unionSet = new MySet();
