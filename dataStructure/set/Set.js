@@ -43,16 +43,46 @@ class MySet {
   }
 
   intersection(otherSet) {
-    const intersectionUnion = new MySet();
+    const intersectionSet = new MySet();
     
     for (const valueFromFirstSet of this.values()) {
       if (otherSet.has(valueFromFirstSet)) {
-        intersectionUnion.add(valueFromFirstSet);
+        intersectionSet.add(valueFromFirstSet);
       }
     }
 
-    return intersectionUnion;
+    return intersectionSet;
   }
-}
+
+  difference(otherSet) {
+    const differenceSet = new MySet();
+
+    for (const valueFromFirstSet of this.values()) {
+      if (!otherSet.has(valueFromFirstSet)) {
+        differenceSet.add(valueFromFirstSet);
+      }
+    }
+
+    return differenceSet;
+  }
+
+  symmetricDifference(otherSet) {
+    const symmetricDifferenceSet = new MySet();
+
+    for (const valueFromFirstSet of this.values()) {
+      if (!otherSet.has(valueFromFirstSet)) {
+        symmetricDifferenceSet.add(valueFromFirstSet);
+      }
+    }
+
+    for (const valueFromSecondSet of otherSet.values()) {
+      if (!this.has(valueFromSecondSet)) {
+        symmetricDifferenceSet.add(valueFromSecondSet);
+      }
+    }
+
+    return symmetricDifferenceSet;
+  }
+} 
 
 module.exports = MySet;
