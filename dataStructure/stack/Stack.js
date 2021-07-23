@@ -2,7 +2,6 @@ class Stack {
 	_values = {}
 	_length = 0
 
-
 	get size() {
 		return this._length;
 	}
@@ -29,5 +28,3 @@ class Stack {
 		return this._values[this._length - 1];
 	}
 }
-
-module.exports = Stack;

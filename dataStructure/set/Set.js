@@ -87,6 +87,4 @@ class MySet {
 
     return symmetricDifferenceSet;
   }
-} 
-
-module.exports = MySet;
+}
