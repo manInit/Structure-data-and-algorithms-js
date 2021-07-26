@@ -1,0 +1,39 @@
+@use './fonts.sass'
+
+*
+  font-family: 'Lato', sans-serif
+
+.container
+  max-width: 1080px
+  margin: 0 auto
+  padding: 64px 0
+
+a
+  color: #000000
+  text-decoration: none
+
+h1
+  background: #e7d900
+  text-align: center
+  font-size: 1.5em
+  font-weight: bold
+  text-transform: uppercase
+  padding: 20px 0
+
+h2
+  font-size: 1.25em
+  font-weight: bold
+  text-align: center
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &::before, &::after
+    content: ''
+    display: block
+    border-top: 3px double #000
+    flex: 1
+    height: 1px
+  &::before
+    margin-right: 10px
+  &::after
+    margin-left: 10px
