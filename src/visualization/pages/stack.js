@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
-  />
-  <link rel="stylesheet" href="./main.css">
-
-</head>
-<body>
+const stackHTML = `
   <h1>Структуры данных и алгоритмы с визуализацией</h1>
   <div class="container">
     <h2>Стек</h2>
@@ -58,8 +43,6 @@ class Stack {
       <div class="content__visual visual"></div>
     </div>
   </div>
+`;
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
-  <script src="./main.js"></script>
-</body>
-</html>
+export default stackHTML;

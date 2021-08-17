@@ -12,11 +12,6 @@ let plugins = [
 		filename: 'index.html',
 		inject: false
 	}),
-	new HtmlWebpackPlugin({
-		template: './src/visualization/pages/stack.html',
-		filename: 'stack.html',
-		inject: false
-	})
 ];
 
 if (process.env.NODE_ENV === 'production') {
